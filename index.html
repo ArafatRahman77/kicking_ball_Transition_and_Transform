@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kicking ball</title>
+    <style>
+        .field {
+            border: 2px solid black;
+            width: 50%;
+            height: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            /* transition-timing-function: ease-out; */
+        }
+
+        .ball {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            transition-duration: 10s;
+            transition-delay: 0.3s;
+            border-left: 4px solid green;
+            border-right: 4px solid rgb(22, 21, 21);
+            border-top: 4px solid purple;
+            border-bottom: 4px solid blue;
+            right: -300px;
+            bottom: 360px;
+        }
+
+        /* .field:hover .ball {
+            translate: -2000px -1000px;
+            transform: rotate(360deg);
+        } 
+
+        .ball:hover {
+            translate: -2000px -1000px ;
+            transform: rotate(360deg);
+
+        } */
+
+        /* .field:hover img {
+            transform: rotate(-60deg);
+            transition-duration: 3s;
+        }  */
+
+        img:hover {
+            transform: rotate(-60deg);
+            transition-duration: 3s;
+        }
+
+        img:hover+.ball {
+            translate: -2000px -1000px;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <br><br><br><br><br><br><br><br><br><br>
+
+
+        <div class="kick">
+            <img src="images/bikick-removebg-preview.png" alt="">
+            <div class="ball">
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
